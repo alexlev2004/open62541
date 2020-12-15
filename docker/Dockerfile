@@ -33,4 +33,4 @@ RUN python /opt/open62541/tools/certs/create_self-signed.py /opt/open62541/pki/c
 
 
 EXPOSE 4840
-CMD ["/opt/open62541/build/bin/examples/server_ctt" , "/opt/open62541/pki/created/server_cert.der", "/opt/open62541/pki/created/server_key.der", "--enableUnencrypted", "--enableAnonymous"]
+CMD ["/opt/open62541/build/bin/examples/server_halo" , "/opt/open62541/pki/created/server_cert.der", "/opt/open62541/pki/created/server_key.der", "--enableUnencrypted", "--enableAnonymous"]
